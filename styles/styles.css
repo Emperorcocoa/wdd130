@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main h1{
+    padding-bottom: 40px;
+    color: #4f42b5;
+}
+
+main img {
+  width: 200px;
+  height: auto;
+}
+
+p {
+  padding: 0;
+}
+
+aside {
+  width: 300px;
+  margin: 20px auto;
+  border: 1px solid #333;
+  padding: 15px;
+  background-color: #f0f0f0;
+  color: #000;
+}
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  margin-top: 30px;
+  border-top: 2px solid #ccc;
+  text-align: center;
+}
+
+/* === Class Selectors === */
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #eef;
+  color: #000;
+}
+
+/* Float profile image to the right */
+.profile {
+  float: right;
+  margin-left: 1rem;
+}
+
+/* Position aside h2 over the image */
+aside {
+  position: relative;
+}
+
+aside h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 0.5rem;
+}
