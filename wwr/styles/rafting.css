@@ -1,11 +1,9 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* CSS Variables */
 :root {
   --primary-color: #0c4a6e;
   --accent1-color: #38bdf8;
@@ -14,32 +12,27 @@
   --body-font: 'Arial', sans-serif;
 }
 
-/* Base styles */
 body {
   font-family: var(--body-font);
   color: var(--primary-color);
   background-color: white;
 }
 
-/* Layout width */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-/* Heading styles */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* Spacing */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* Header Grid Layout */
 .header-grid {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -53,7 +46,6 @@ nav, p, section, article {
   max-height: 80px;
 }
 
-/* Nav Flex Layout */
 .header-grid nav {
   display: flex;
   justify-content: flex-end;
@@ -74,7 +66,6 @@ nav, p, section, article {
   color: white;
 }
 
-/* Hero Styles */
 .hero {
   position: relative;
   min-height: 400px;
@@ -114,7 +105,6 @@ nav, p, section, article {
   border-radius: 6px;
 }
 
-/* History Section */
 .history {
   background-color: var(--accent2-color);
   padding: 16px;
@@ -136,7 +126,6 @@ nav, p, section, article {
   border-radius: 8px;
 }
 
-/* Adventures Section */
 .adventures {
   margin: 32px auto;
   padding: 16px;
@@ -167,7 +156,7 @@ nav, p, section, article {
   font-size: 0.9rem;
 }
 
-/* Footer */
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -194,4 +183,115 @@ footer .socialmedia a {
 footer .socialmedia img {
   width: 32px;
   height: auto;
+}
+
+.contact-info {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  margin: 24px 0;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form label,
+.contact-form legend {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+}
+
+.employees {
+  text-align: center;
+  margin-top: 40px;
+  background-color: var(--accent2-color);
+  padding: 24px;
+  border-top: 3px solid var(--primary-color);
+}
+
+.employee-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.employee-gallery figure {
+  text-align: center;
+  width: 150px;
+}
+
+.employee-gallery img
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.employee-gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+
+.header-grid img {
+  max-height: 80px;
+  width: auto;
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border: 0;
+  border-radius: 6px;
 }
